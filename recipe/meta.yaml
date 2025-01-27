@@ -1,5 +1,5 @@
 {% set name = "kiss-headers" %}
-{% set version = "2.4.3" %}
+{% set version = "2.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/kiss_headers-{{ version }}.tar.gz
-  sha256: 70c689ce167ac83146f094ea916b40a3767d67c2e05a4cb95b0fd2e33bf243f1
+  sha256: 63ce797b6d85763d4b0e9611bd62d30fe31b0c4edb601838e76a039e4a4cdb59
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
